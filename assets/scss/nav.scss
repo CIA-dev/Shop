@@ -1,0 +1,331 @@
+
+#nav-section {
+  .form-search {
+    input {
+      width: 100%;
+      background: transparent;
+      font-size: 12px;
+      height: 50px;
+      line-height: 50px;
+      padding: 0 15px 0 160px;
+      transition: 0.2s;
+      color: #666;
+      outline: none;
+      display: block;
+      position: relative;
+      overflow: hidden;
+      border: none;
+      box-shadow: 0 5px 5px #f5f5f5;
+    }
+
+    .action-btns {
+      border-radius: 20px 0 0 20px;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .btn-search {
+      position: absolute;
+      width: 55px;
+      height: 50px;
+      left: -10%;
+      color: #fff;
+      line-height: 35px;
+      border: none;
+      display: block;
+      outline: none;
+      background: #651fff;
+      z-index: 999;
+      border-radius: 20px 0 0 20px;
+      float: left;
+    }
+
+    .nice-select {
+      font-size: 12px;
+      height: 50px;
+      line-height: 45px;
+      background: transparent;
+      border-radius: 0;
+      padding-right: 18px;
+      padding-left: 30px;
+      border: none;
+
+      &.right {
+        .list {
+          width: 100%;
+          height: 160px;
+          overflow-y: auto;
+          border-radius: 10px;
+          background-color: #fff;
+          -webkit-box-shadow: 0 10px 30px 0 rgba(31, 45, 61, 0.1);
+          box-shadow: 0 10px 30px 0 rgba(31, 45, 61, 0.1);
+
+        }
+      }
+
+      &:after {
+        left: 12px;
+        right: auto;
+      }
+    }
+  }
+
+  .nav-account {
+    .account-box {
+      .account-title {
+        font-size: 1.2rem;
+        position: relative;
+
+        .dropdown-menu {
+          top: 100%;
+          right: -20%;
+          text-align: center;
+          margin-top: 15px;
+          padding: 0;
+
+          li {
+            padding: 5px 0;
+
+            a {
+              text-decoration: none;
+              color: #000;
+            }
+
+            &:hover {
+              background-color: #ddd;
+            }
+
+          }
+        }
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      .account-icon {
+        img {
+          width: 50px;
+          height: 50px;
+        }
+      }
+    }
+  }
+
+  nav#desktop {
+    #nav-icon {
+      display: none;
+    }
+
+    padding: 15px 0;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+
+    * {
+      margin-bottom: 0;
+    }
+
+    ul {
+      list-style: none;
+
+      li {
+        display: inline-block;
+        margin: 0 15px;
+
+        &.under-hover {
+          position: relative;
+
+          &:after {
+            bottom: -10px;
+            content: "";
+            height: 2px;
+            left: 50%;
+            position: absolute;
+            background: #651fff;
+            transition: width 0.3s ease 0s, left 0.3s ease 0s;
+            width: 0;
+          }
+
+          &:hover{
+            &:after {
+              width: 100%;
+              left: 0;
+            }
+            >a{
+              color: #651fff;
+            }
+          }
+
+        }
+
+        .fa-chevron-down {
+          transition: 320ms;
+        }
+
+        &.has-dropdown,
+        &.has-mega {
+          position: relative;
+        }
+
+        .dropdown-menu {
+          position: fixed;
+          right: 0;
+          left: 0;
+          padding: 10px;
+          margin: 15px auto;
+
+          li {
+            display: block;
+            margin: 15px 8px;
+            transition: 320ms;
+
+            &:hover {
+              transform: translateX(-8px);
+
+              > a {
+                color: #651fff;
+                font-weight: 600;
+              }
+            }
+
+            a {
+              font-size: 1.1rem;
+            }
+          }
+
+          h2 {
+            padding: 5px 0;
+            transition: 320ms;
+            color: #616161;
+
+            &:hover {
+              width: fit-content;
+              color: #651fff;
+              border-bottom: 2px dashed #651fff;
+            }
+          }
+        }
+
+        &.has-dropdown {
+          .has-submenu {
+            position: relative;
+
+            .fa-chevron-left {
+              transition: 320ms;
+            }
+
+            &:hover {
+              .fa-chevron-left {
+                transform: rotate(-45deg);
+              }
+            }
+
+            .dropdown-menu {
+              top: 0;
+              right: 100%;
+              margin-right: 18%;
+            }
+
+          }
+
+          .dropdown-menu {
+            ul {
+              padding: 0;
+              text-align: center;
+
+              li {
+                &:hover {
+                  transform: initial;
+                }
+              }
+            }
+
+            position: absolute;
+            width: fit-content !important;
+            right: 0;
+            left: 0;
+          }
+        }
+
+        &:first-child {
+          margin-right: 0;
+        }
+
+        a {
+          text-decoration: none;
+          color: #000;
+        }
+      }
+    }
+  }
+
+  nav#mobile {
+    display: none;
+  }
+}
+
+
+@media (max-width: 1000px) {
+  #nav-section {
+
+    .form-search {
+      margin: 10px 0;
+
+      input {
+        width: 100%;
+        background: transparent;
+        font-size: 12px;
+        border: 1px solid #ddd;
+      }
+
+      .btn-search {
+        position: absolute;
+        width: 40px;
+        height: 50px;
+        left: 0%;
+        border-radius: 0;
+      }
+
+      .nice-select {
+        display: none;
+      }
+    }
+
+    .nav-account {
+      .account-box {
+        .account-title {
+          display: none;
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+
+        .account-icon {
+          img {
+            width: 40px;
+            height: 40px;
+          }
+        }
+      }
+    }
+
+    nav#desktop {
+      display: none;
+    }
+
+    .hc-nav-trigger {
+      position: static;
+      font-size: 2rem;
+    }
+
+    nav#mobile {
+
+      #nav-icon {
+        display: block;
+      }
+    }
+
+  }
+}

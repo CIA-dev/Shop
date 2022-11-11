@@ -1,0 +1,15 @@
+@import "../../node_modules/vazirmatn/misc/Farsi-Digits/Vazirmatn-FD-font-face.css";
+@import "../../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
+@import "../../node_modules/jquery-nice-select/scss/nice-select";
+@import "../../node_modules/hc-offcanvas-nav/dist/hc-offcanvas-nav.carbon.css";
+@import 'nav';
+
+body {
+  direction: rtl;
+}
+* {
+  font-family: Vazirmatn FD;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
