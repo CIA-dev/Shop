@@ -1,7 +1,5 @@
 $(function () {
     $('select').niceSelect();
-
-
 //    navigation dropdown active
 
     $('.account-title').on('mouseenter', function (e) {
@@ -53,6 +51,7 @@ $(function () {
         rtl: true,
         levelOpen: 'expand',
     });
+
 
 
 })

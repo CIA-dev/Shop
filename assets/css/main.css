@@ -1,6 +1,20 @@
+@charset "UTF-8";
 @import "../../node_modules/vazirmatn/misc/Farsi-Digits/Vazirmatn-FD-font-face.css";
 @import "../../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
 @import "../../node_modules/hc-offcanvas-nav/dist/hc-offcanvas-nav.carbon.css";
+@import "../../node_modules/owl.carousel/dist/assets/owl.carousel.min.css";
+@import "../../node_modules/owl.carousel/dist/assets/owl.theme.default.css";
+body {
+  direction: rtl;
+}
+
+* {
+  font-family: Vazirmatn FD;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .nice-select {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   background-color: #fff;
@@ -280,8 +294,8 @@
 }
 #nav-section nav#desktop ul li .dropdown-menu {
   position: fixed;
-  right: 0;
   left: 0;
+  right: 0;
   padding: 10px;
   margin: 15px auto;
 }
@@ -389,15 +403,175 @@
     display: block;
   }
 }
-body {
-  direction: rtl;
+#hots .offers .owl-theme .owl-dots {
+  text-align: center;
+  -webkit-tap-highlight-color: transparent;
+  position: absolute;
+  bottom: 0%;
+  right: 10px;
+}
+#hots .offers .box {
+  height: 300px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+#hots .offers .box .box-img {
+  flex-basis: 40%;
+}
+#hots .offers .box .box-info {
+  flex-basis: 50%;
+}
+#hots .offers .box .box-info .name {
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 150ms;
+}
+#hots .offers .box .box-info .name:hover {
+  color: #651fff;
+}
+#hots .offers .box .box-info .price {
+  font-size: 1.2rem;
+  color: #651fff;
+}
+#hots .offers .box .box-info .price del {
+  color: #ccc;
+  font-size: 1rem;
+}
+#hots .offers .box .box-info ul {
+  margin-top: 15px;
+  list-style: none;
+}
+#hots .offers .box .box-info ul li {
+  font-size: 0.9rem;
+  color: #9f9f9f;
+  margin-bottom: 10px;
+}
+#hots .offers .box .box-info ul li span {
+  color: green;
+}
+#hots .offers .box .box-info .count-down {
+  text-align: center;
+}
+#hots .offers .box .box-info .count-down span {
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  display: inline-block;
+  line-height: 30px;
+  position: relative;
+}
+#hots .offers .box .box-info .count-down span.day:before {
+  content: "روز";
+  position: absolute;
+  bottom: -25px;
+  color: #9f9f9f;
+  text-align: center;
+  right: 0;
+  left: 0;
+  font-size: 0.8rem;
+}
+#hots .offers .box .box-info .count-down span.hour:before {
+  content: "ساعت";
+  position: absolute;
+  bottom: -25px;
+  color: #9f9f9f;
+  text-align: center;
+  right: 0;
+  left: 0;
+  font-size: 0.8rem;
+}
+#hots .offers .box .box-info .count-down span.min:before {
+  content: "دقیقه";
+  position: absolute;
+  bottom: -25px;
+  color: #9f9f9f;
+  text-align: center;
+  right: 0;
+  left: 0;
+  font-size: 0.8rem;
+}
+#hots .offers .box .box-info .count-down span.sec:before {
+  content: "ثانیه";
+  position: absolute;
+  bottom: -25px;
+  color: #9f9f9f;
+  text-align: center;
+  right: 0;
+  left: 0;
+  font-size: 0.8rem;
+}
+#hots .ontime {
+  border: 1px solid #ddd;
+  width: 320px;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 8px;
+}
+#hots .ontime .slide-progress {
+  height: 4px;
+  background: #ccc;
+  position: absolute;
+  width: 0;
+  right: 0;
+  bottom: 0;
+  max-width: 100%;
+  display: inline-block;
+  animation: progressbar 10s ease-in-out;
+  animation-iteration-count: 1;
+  animation-iteration-count: infinite;
+  border-radius: 50px;
+}
+#hots .ontime .box {
+  margin: 0 auto;
+  padding: 15px;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+#hots .ontime .box .box-img img {
+  width: 150px;
+  margin: 15px auto;
+}
+#hots .ontime .box .box-info .name {
+  color: #000;
+  text-decoration: none;
+  transition: 150ms;
+  font-size: 0.9rem;
+}
+#hots .ontime .box .box-info .name:hover {
+  color: #651fff;
 }
 
-* {
-  font-family: Vazirmatn FD;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@media (max-width: 1000px) {
+  #hots .offers {
+    width: 350px;
+    padding: 10px;
+    margin: 0 auto;
+  }
+  #hots .offers .box {
+    height: auto;
+    flex-direction: column;
+    text-align: center;
+  }
+  #hots .offers .box .box-img {
+    flex-basis: 100%;
+    margin-bottom: 15px;
+  }
+  #hots .offers .box .box-info {
+    flex-basis: 100%;
+  }
+  #hots .ontime {
+    width: 330px;
+    padding: 8px;
+    margin: 15px auto;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
