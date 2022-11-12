@@ -143,6 +143,9 @@
   display: block;
 }
 
+#nav-section {
+  background-color: #fff;
+}
 #nav-section .form-search input {
   width: 100%;
   background: transparent;
@@ -388,8 +391,6 @@
 }
 body {
   direction: rtl;
-  background-color:#f5f5f5 ;
-
 }
 
 * {
@@ -400,15 +401,3 @@ body {
 }
 
 /*# sourceMappingURL=main.css.map */
-
-
-/* Header Carousel Styles */
-body img {
-    border-radius: 30px;
-}
-#head-offers img {
-  width: 400px;
-}
-
-
-/* HEADER CAROUSEL STYLE PART 2 */

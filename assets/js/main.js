@@ -49,9 +49,10 @@ $(function () {
         navTitle: 'All Categories',
         levelTitles: true,
         levelTitleAsBack: true,
-        position:'right',
-        rtl:true,
-        levelOpen:'expand',
+        position: 'right',
+        rtl: true,
+        levelOpen: 'expand',
     });
+
 
 })
