@@ -15,6 +15,7 @@ $(function () {
         loop: true,
         margin: 10,
         nav: false,
+        autoplayTimeout: 4000,
         responsive: {
             0: {
                 items: 1,
