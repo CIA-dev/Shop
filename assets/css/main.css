@@ -407,14 +407,8 @@ body img {
     border-radius: 30px;
 }
 #head-offers img {
-      width: 350px;
+  max-width: 300px;
 }
-@media(max-width:800px) {
-  #head-offers{
-    width: 500px;
-    display: block;
 
-  }
-}
 
 /* HEADER CAROUSEL STYLE PART 2 */

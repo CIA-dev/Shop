@@ -148,12 +148,13 @@
             width: 0;
           }
 
-          &:hover{
+          &:hover {
             &:after {
               width: 100%;
               left: 0;
             }
-            >a{
+
+            > a {
               color: #651fff;
             }
           }
