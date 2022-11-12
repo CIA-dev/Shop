@@ -1,400 +1,472 @@
 @import "../../node_modules/vazirmatn/misc/Farsi-Digits/Vazirmatn-FD-font-face.css";
 @import "../../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
 @import "../../node_modules/hc-offcanvas-nav/dist/hc-offcanvas-nav.carbon.css";
+
 .nice-select {
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  background-color: #fff;
-  border-radius: 5px;
-  border: solid 1px #e8e8e8;
-  box-sizing: border-box;
-  clear: both;
-  cursor: pointer;
-  display: block;
-  float: left;
-  font-family: inherit;
-  font-size: 14px;
-  font-weight: normal;
-  height: 42px;
-  line-height: 40px;
-  outline: none;
-  padding-left: 18px;
-  padding-right: 30px;
-  position: relative;
-  text-align: left !important;
-  transition: all 0.2s ease-in-out;
-  user-select: none;
-  white-space: nowrap;
-  width: auto;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    background-color: #fff;
+    border-radius: 5px;
+    border: solid 1px #e8e8e8;
+    box-sizing: border-box;
+    clear: both;
+    cursor: pointer;
+    display: block;
+    float: left;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: normal;
+    height: 42px;
+    line-height: 40px;
+    outline: none;
+    padding-left: 18px;
+    padding-right: 30px;
+    position: relative;
+    text-align: left !important;
+    transition: all 0.2s ease-in-out;
+    user-select: none;
+    white-space: nowrap;
+    width: auto;
 }
+
 .nice-select:hover {
-  border-color: #dbdbdb;
+    border-color: #dbdbdb;
 }
+
 .nice-select:active, .nice-select.open, .nice-select:focus {
-  border-color: #999;
+    border-color: #999;
 }
+
 .nice-select:after {
-  border-bottom: 2px solid #999;
-  border-right: 2px solid #999;
-  content: "";
-  display: block;
-  height: 5px;
-  margin-top: -4px;
-  pointer-events: none;
-  position: absolute;
-  right: 12px;
-  top: 50%;
-  transform-origin: 66% 66%;
-  transform: rotate(45deg);
-  transition: all 0.15s ease-in-out;
-  width: 5px;
+    border-bottom: 2px solid #999;
+    border-right: 2px solid #999;
+    content: "";
+    display: block;
+    height: 5px;
+    margin-top: -4px;
+    pointer-events: none;
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform-origin: 66% 66%;
+    transform: rotate(45deg);
+    transition: all 0.15s ease-in-out;
+    width: 5px;
 }
+
 .nice-select.open:after {
-  transform: rotate(-135deg);
+    transform: rotate(-135deg);
 }
+
 .nice-select.open .list {
-  opacity: 1;
-  pointer-events: auto;
-  transform: scale(1) translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+    transform: scale(1) translateY(0);
 }
+
 .nice-select.disabled {
-  border-color: #ededed;
-  color: #999;
-  pointer-events: none;
+    border-color: #ededed;
+    color: #999;
+    pointer-events: none;
 }
+
 .nice-select.disabled:after {
-  border-color: #cccccc;
+    border-color: #cccccc;
 }
+
 .nice-select.wide {
-  width: 100%;
+    width: 100%;
 }
+
 .nice-select.wide .list {
-  left: 0 !important;
-  right: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
 }
+
 .nice-select.right {
-  float: right;
+    float: right;
 }
+
 .nice-select.right .list {
-  left: auto;
-  right: 0;
+    left: auto;
+    right: 0;
 }
+
 .nice-select.small {
-  font-size: 12px;
-  height: 36px;
-  line-height: 34px;
+    font-size: 12px;
+    height: 36px;
+    line-height: 34px;
 }
+
 .nice-select.small:after {
-  height: 4px;
-  width: 4px;
+    height: 4px;
+    width: 4px;
 }
+
 .nice-select.small .option {
-  line-height: 34px;
-  min-height: 34px;
+    line-height: 34px;
+    min-height: 34px;
 }
+
 .nice-select .list {
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 0 0 1px rgba(68, 68, 68, 0.11);
-  box-sizing: border-box;
-  margin-top: 4px;
-  opacity: 0;
-  overflow: hidden;
-  padding: 0;
-  pointer-events: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  transform-origin: 50% 0;
-  transform: scale(0.75) translateY(-21px);
-  transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
-  z-index: 9;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 0 1px rgba(68, 68, 68, 0.11);
+    box-sizing: border-box;
+    margin-top: 4px;
+    opacity: 0;
+    overflow: hidden;
+    padding: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transform-origin: 50% 0;
+    transform: scale(0.75) translateY(-21px);
+    transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
+    z-index: 9;
 }
+
 .nice-select .list:hover .option:not(:hover) {
-  background-color: transparent !important;
+    background-color: transparent !important;
 }
+
 .nice-select .option {
-  cursor: pointer;
-  font-weight: 400;
-  line-height: 40px;
-  list-style: none;
-  min-height: 40px;
-  outline: none;
-  padding-left: 18px;
-  padding-right: 29px;
-  text-align: left;
-  transition: all 0.2s;
+    cursor: pointer;
+    font-weight: 400;
+    line-height: 40px;
+    list-style: none;
+    min-height: 40px;
+    outline: none;
+    padding-left: 18px;
+    padding-right: 29px;
+    text-align: left;
+    transition: all 0.2s;
 }
+
 .nice-select .option:hover, .nice-select .option.focus, .nice-select .option.selected.focus {
-  background-color: #f6f6f6;
+    background-color: #f6f6f6;
 }
+
 .nice-select .option.selected {
-  font-weight: bold;
+    font-weight: bold;
 }
+
 .nice-select .option.disabled {
-  background-color: transparent;
-  color: #999;
-  cursor: default;
+    background-color: transparent;
+    color: #999;
+    cursor: default;
 }
 
 .no-csspointerevents .nice-select .list {
-  display: none;
+    display: none;
 }
+
 .no-csspointerevents .nice-select.open .list {
-  display: block;
+    display: block;
 }
 
 #nav-section .form-search input {
-  width: 100%;
-  background: transparent;
-  font-size: 12px;
-  height: 50px;
-  line-height: 50px;
-  padding: 0 15px 0 160px;
-  transition: 0.2s;
-  color: #666;
-  outline: none;
-  display: block;
-  position: relative;
-  overflow: hidden;
-  border: none;
-  box-shadow: 0 5px 5px #f5f5f5;
-}
-#nav-section .form-search .action-btns {
-  border-radius: 20px 0 0 20px;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-#nav-section .form-search .btn-search {
-  position: absolute;
-  width: 55px;
-  height: 50px;
-  left: -10%;
-  color: #fff;
-  line-height: 35px;
-  border: none;
-  display: block;
-  outline: none;
-  background: #651fff;
-  z-index: 999;
-  border-radius: 20px 0 0 20px;
-  float: left;
-}
-#nav-section .form-search .nice-select {
-  font-size: 12px;
-  height: 50px;
-  line-height: 45px;
-  background: transparent;
-  border-radius: 0;
-  padding-right: 18px;
-  padding-left: 30px;
-  border: none;
-}
-#nav-section .form-search .nice-select.right .list {
-  width: 100%;
-  height: 160px;
-  overflow-y: auto;
-  border-radius: 10px;
-  background-color: #fff;
-  -webkit-box-shadow: 0 10px 30px 0 rgba(31, 45, 61, 0.1);
-  box-shadow: 0 10px 30px 0 rgba(31, 45, 61, 0.1);
-}
-#nav-section .form-search .nice-select:after {
-  left: 12px;
-  right: auto;
-}
-#nav-section .nav-account .account-box .account-title {
-  font-size: 1.2rem;
-  position: relative;
-}
-#nav-section .nav-account .account-box .account-title .dropdown-menu {
-  top: 100%;
-  right: -20%;
-  text-align: center;
-  margin-top: 15px;
-  padding: 0;
-}
-#nav-section .nav-account .account-box .account-title .dropdown-menu li {
-  padding: 5px 0;
-}
-#nav-section .nav-account .account-box .account-title .dropdown-menu li a {
-  text-decoration: none;
-  color: #000;
-}
-#nav-section .nav-account .account-box .account-title .dropdown-menu li:hover {
-  background-color: #ddd;
-}
-#nav-section .nav-account .account-box .account-title:hover {
-  cursor: pointer;
-}
-#nav-section .nav-account .account-box .account-icon img {
-  width: 50px;
-  height: 50px;
-}
-#nav-section nav#desktop {
-  padding: 15px 0;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-}
-#nav-section nav#desktop #nav-icon {
-  display: none;
-}
-#nav-section nav#desktop * {
-  margin-bottom: 0;
-}
-#nav-section nav#desktop ul {
-  list-style: none;
-}
-#nav-section nav#desktop ul li {
-  display: inline-block;
-  margin: 0 15px;
-}
-#nav-section nav#desktop ul li.under-hover {
-  position: relative;
-}
-#nav-section nav#desktop ul li.under-hover:after {
-  bottom: -10px;
-  content: "";
-  height: 2px;
-  left: 50%;
-  position: absolute;
-  background: #651fff;
-  transition: width 0.3s ease 0s, left 0.3s ease 0s;
-  width: 0;
-}
-#nav-section nav#desktop ul li.under-hover:hover:after {
-  width: 100%;
-  left: 0;
-}
-#nav-section nav#desktop ul li.under-hover:hover > a {
-  color: #651fff;
-}
-#nav-section nav#desktop ul li .fa-chevron-down {
-  transition: 320ms;
-}
-#nav-section nav#desktop ul li.has-dropdown, #nav-section nav#desktop ul li.has-mega {
-  position: relative;
-}
-#nav-section nav#desktop ul li .dropdown-menu {
-  position: fixed;
-  right: 0;
-  left: 0;
-  padding: 10px;
-  margin: 15px auto;
-}
-#nav-section nav#desktop ul li .dropdown-menu li {
-  display: block;
-  margin: 15px 8px;
-  transition: 320ms;
-}
-#nav-section nav#desktop ul li .dropdown-menu li:hover {
-  transform: translateX(-8px);
-}
-#nav-section nav#desktop ul li .dropdown-menu li:hover > a {
-  color: #651fff;
-  font-weight: 600;
-}
-#nav-section nav#desktop ul li .dropdown-menu li a {
-  font-size: 1.1rem;
-}
-#nav-section nav#desktop ul li .dropdown-menu h2 {
-  padding: 5px 0;
-  transition: 320ms;
-  color: #616161;
-}
-#nav-section nav#desktop ul li .dropdown-menu h2:hover {
-  width: fit-content;
-  color: #651fff;
-  border-bottom: 2px dashed #651fff;
-}
-#nav-section nav#desktop ul li.has-dropdown .has-submenu {
-  position: relative;
-}
-#nav-section nav#desktop ul li.has-dropdown .has-submenu .fa-chevron-left {
-  transition: 320ms;
-}
-#nav-section nav#desktop ul li.has-dropdown .has-submenu:hover .fa-chevron-left {
-  transform: rotate(-45deg);
-}
-#nav-section nav#desktop ul li.has-dropdown .has-submenu .dropdown-menu {
-  top: 0;
-  right: 100%;
-  margin-right: 18%;
-}
-#nav-section nav#desktop ul li.has-dropdown .dropdown-menu {
-  position: absolute;
-  width: fit-content !important;
-  right: 0;
-  left: 0;
-}
-#nav-section nav#desktop ul li.has-dropdown .dropdown-menu ul {
-  padding: 0;
-  text-align: center;
-}
-#nav-section nav#desktop ul li.has-dropdown .dropdown-menu ul li:hover {
-  transform: initial;
-}
-#nav-section nav#desktop ul li:first-child {
-  margin-right: 0;
-}
-#nav-section nav#desktop ul li a {
-  text-decoration: none;
-  color: #000;
-}
-#nav-section nav#mobile {
-  display: none;
-}
-
-@media (max-width: 1000px) {
-  #nav-section .form-search {
-    margin: 10px 0;
-  }
-  #nav-section .form-search input {
     width: 100%;
     background: transparent;
     font-size: 12px;
-    border: 1px solid #ddd;
-  }
-  #nav-section .form-search .btn-search {
-    position: absolute;
-    width: 40px;
     height: 50px;
-    left: 0%;
-    border-radius: 0;
-  }
-  #nav-section .form-search .nice-select {
-    display: none;
-  }
-  #nav-section .nav-account .account-box .account-title {
-    display: none;
-  }
-  #nav-section .nav-account .account-box .account-title:hover {
-    cursor: pointer;
-  }
-  #nav-section .nav-account .account-box .account-icon img {
-    width: 40px;
-    height: 40px;
-  }
-  #nav-section nav#desktop {
-    display: none;
-  }
-  #nav-section .hc-nav-trigger {
-    position: static;
-    font-size: 2rem;
-  }
-  #nav-section nav#mobile #nav-icon {
+    line-height: 50px;
+    padding: 0 15px 0 160px;
+    transition: 0.2s;
+    color: #666;
+    outline: none;
     display: block;
-  }
+    position: relative;
+    overflow: hidden;
+    border: none;
+    box-shadow: 0 5px 5px #f5f5f5;
 }
+
+#nav-section .form-search .action-btns {
+    border-radius: 20px 0 0 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#nav-section .form-search .btn-search {
+    position: absolute;
+    width: 55px;
+    height: 50px;
+    left: -10%;
+    color: #fff;
+    line-height: 35px;
+    border: none;
+    display: block;
+    outline: none;
+    background: #651fff;
+    z-index: 999;
+    border-radius: 20px 0 0 20px;
+    float: left;
+}
+
+#nav-section .form-search .nice-select {
+    font-size: 12px;
+    height: 50px;
+    line-height: 45px;
+    background: transparent;
+    border-radius: 0;
+    padding-right: 18px;
+    padding-left: 30px;
+    border: none;
+}
+
+#nav-section .form-search .nice-select.right .list {
+    width: 100%;
+    height: 160px;
+    overflow-y: auto;
+    border-radius: 10px;
+    background-color: #fff;
+    -webkit-box-shadow: 0 10px 30px 0 rgba(31, 45, 61, 0.1);
+    box-shadow: 0 10px 30px 0 rgba(31, 45, 61, 0.1);
+}
+
+#nav-section .form-search .nice-select:after {
+    left: 12px;
+    right: auto;
+}
+
+#nav-section .nav-account .account-box .account-title {
+    font-size: 1.2rem;
+    position: relative;
+}
+
+#nav-section .nav-account .account-box .account-title .dropdown-menu {
+    top: 100%;
+    right: -20%;
+    text-align: center;
+    margin-top: 15px;
+    padding: 0;
+}
+
+#nav-section .nav-account .account-box .account-title .dropdown-menu li {
+    padding: 5px 0;
+}
+
+#nav-section .nav-account .account-box .account-title .dropdown-menu li a {
+    text-decoration: none;
+    color: #000;
+}
+
+#nav-section .nav-account .account-box .account-title .dropdown-menu li:hover {
+    background-color: #ddd;
+}
+
+#nav-section .nav-account .account-box .account-title:hover {
+    cursor: pointer;
+}
+
+#nav-section .nav-account .account-box .account-icon img {
+    width: 50px;
+    height: 50px;
+}
+
+#nav-section nav#desktop {
+    padding: 15px 0;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+#nav-section nav#desktop #nav-icon {
+    display: none;
+}
+
+#nav-section nav#desktop * {
+    margin-bottom: 0;
+}
+
+#nav-section nav#desktop ul {
+    list-style: none;
+}
+
+#nav-section nav#desktop ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+#nav-section nav#desktop ul li.under-hover {
+    position: relative;
+}
+
+#nav-section nav#desktop ul li.under-hover:after {
+    bottom: -10px;
+    content: "";
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #651fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+#nav-section nav#desktop ul li.under-hover:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+#nav-section nav#desktop ul li.under-hover:hover > a {
+    color: #651fff;
+}
+
+#nav-section nav#desktop ul li .fa-chevron-down {
+    transition: 320ms;
+}
+
+#nav-section nav#desktop ul li.has-dropdown, #nav-section nav#desktop ul li.has-mega {
+    position: relative;
+}
+
+#nav-section nav#desktop ul li .dropdown-menu {
+    position: fixed;
+    right: 0;
+    left: 0;
+    padding: 10px;
+    margin: 15px auto;
+}
+
+#nav-section nav#desktop ul li .dropdown-menu li {
+    display: block;
+    margin: 15px 8px;
+    transition: 320ms;
+}
+
+#nav-section nav#desktop ul li .dropdown-menu li:hover {
+    transform: translateX(-8px);
+}
+
+#nav-section nav#desktop ul li .dropdown-menu li:hover > a {
+    color: #651fff;
+    font-weight: 600;
+}
+
+#nav-section nav#desktop ul li .dropdown-menu li a {
+    font-size: 1.1rem;
+}
+
+#nav-section nav#desktop ul li .dropdown-menu h2 {
+    padding: 5px 0;
+    transition: 320ms;
+    color: #616161;
+}
+
+#nav-section nav#desktop ul li .dropdown-menu h2:hover {
+    width: fit-content;
+    color: #651fff;
+    border-bottom: 2px dashed #651fff;
+}
+
+#nav-section nav#desktop ul li.has-dropdown .has-submenu {
+    position: relative;
+}
+
+#nav-section nav#desktop ul li.has-dropdown .has-submenu .fa-chevron-left {
+    transition: 320ms;
+}
+
+#nav-section nav#desktop ul li.has-dropdown .has-submenu:hover .fa-chevron-left {
+    transform: rotate(-45deg);
+}
+
+#nav-section nav#desktop ul li.has-dropdown .has-submenu .dropdown-menu {
+    top: 0;
+    right: 100%;
+    margin-right: 18%;
+}
+
+#nav-section nav#desktop ul li.has-dropdown .dropdown-menu {
+    position: absolute;
+    width: fit-content !important;
+    right: 0;
+    left: 0;
+}
+
+#nav-section nav#desktop ul li.has-dropdown .dropdown-menu ul {
+    padding: 0;
+    text-align: center;
+}
+
+#nav-section nav#desktop ul li.has-dropdown .dropdown-menu ul li:hover {
+    transform: initial;
+}
+
+#nav-section nav#desktop ul li:first-child {
+    margin-right: 0;
+}
+
+#nav-section nav#desktop ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+#nav-section nav#mobile {
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    #nav-section .form-search {
+        margin: 10px 0;
+    }
+
+    #nav-section .form-search input {
+        width: 100%;
+        background: transparent;
+        font-size: 12px;
+        border: 1px solid #ddd;
+    }
+
+    #nav-section .form-search .btn-search {
+        position: absolute;
+        width: 40px;
+        height: 50px;
+        left: 0%;
+        border-radius: 0;
+    }
+
+    #nav-section .form-search .nice-select {
+        display: none;
+    }
+
+    #nav-section .nav-account .account-box .account-title {
+        display: none;
+    }
+
+    #nav-section .nav-account .account-box .account-title:hover {
+        cursor: pointer;
+    }
+
+    #nav-section .nav-account .account-box .account-icon img {
+        width: 40px;
+        height: 40px;
+    }
+
+    #nav-section nav#desktop {
+        display: none;
+    }
+
+    #nav-section .hc-nav-trigger {
+        position: static;
+        font-size: 2rem;
+    }
+
+    #nav-section nav#mobile #nav-icon {
+        display: block;
+    }
+}
+
 body {
-  direction: rtl;
+    direction: rtl;
 }
 
 * {
-  font-family: Vazirmatn FD;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    font-family: Vazirmatn FD;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /*# sourceMappingURL=main.css.map */
