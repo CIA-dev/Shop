@@ -1,0 +1,14 @@
+body img {
+    border-radius: 30px;
+}
+#head-offers img {
+    width: 360px;
+    height: 220px;
+    transition: 400ms;
+    opacity: 85%;
+}
+
+#head-offers img:hover {
+    opacity: 100%;
+    transform: scale(102%);
+}
