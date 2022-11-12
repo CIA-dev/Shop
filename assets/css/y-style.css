@@ -12,3 +12,24 @@ body img {
     opacity: 100%;
     transform: scale(102%);
 }
+.item img {
+     width: 100px;
+    height: 250px;
+}
+.item h4{
+    text-align: center;
+    font-size: 14px;
+}
+.item del {
+    display: block;
+    text-align: center;
+    color: red;
+
+}
+.item span {
+    display: block;
+    text-align: center;
+}
+#body-part1 {
+
+}
