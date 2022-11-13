@@ -12,24 +12,24 @@ body img {
     opacity: 100%;
     transform: scale(102%);
 }
-#body-part1 .item img {
-     width: 100px;
-    height: 250px;
-}
-#body-part1 .item h4{
+
+.box-main  del {
+    display: block;
     text-align: center;
+    color: #666666;
+    font-size: 12px;
+
+}
+.box-main  span {
+    display: block;
+    text-align: center;
+    color: dodgerblue;
+}
+.box-main {
+    background-color: white;
+    border-radius: 30px;
+}
+.box-main h4 {
     font-size: 14px;
-}
-#body-part1 .item del {
-    display: block;
     text-align: center;
-    color: red;
-
-}
-#body-part1 .item span {
-    display: block;
-    text-align: center;
-}
-#body-part1 {
-
 }
