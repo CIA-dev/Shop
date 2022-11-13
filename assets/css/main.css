@@ -403,6 +403,10 @@ body {
     display: block;
   }
 }
+#hots .offers {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
 #hots .offers .owl-theme .owl-dots {
   text-align: center;
   -webkit-tap-highlight-color: transparent;
@@ -412,15 +416,13 @@ body {
 }
 #hots .offers .box {
   height: 300px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
   padding: 15px;
   align-items: center;
   display: flex;
   justify-content: space-between;
 }
 #hots .offers .box .box-img {
-  flex-basis: 40%;
+  flex-basis: 30%;
 }
 #hots .offers .box .box-info {
   flex-basis: 50%;
