@@ -1,7 +1,5 @@
 $(function () {
     $('select').niceSelect();
-
-
 //    navigation dropdown active
 
     $('.account-title').on('mouseenter', function (e) {
@@ -49,9 +47,11 @@ $(function () {
         navTitle: 'All Categories',
         levelTitles: true,
         levelTitleAsBack: true,
-        position:'right',
-        rtl:true,
-        levelOpen:'expand',
+        position: 'right',
+        rtl: true,
+        levelOpen: 'expand',
     });
+
+
 
 })

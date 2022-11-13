@@ -1,5 +1,6 @@
 
 #nav-section {
+  background-color: #fff;
   .form-search {
     input {
       width: 100%;
@@ -148,12 +149,13 @@
             width: 0;
           }
 
-          &:hover{
+          &:hover {
             &:after {
               width: 100%;
               left: 0;
             }
-            >a{
+
+            > a {
               color: #651fff;
             }
           }
@@ -170,9 +172,9 @@
         }
 
         .dropdown-menu {
-          position: fixed;
-          right: 0;
+          position:fixed;
           left: 0;
+          right: 0;
           padding: 10px;
           margin: 15px auto;
 

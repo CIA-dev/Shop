@@ -23,6 +23,7 @@
     "hc-offcanvas-nav": "^6.1.5",
     "jquery": "^3.6.1",
     "jquery-nice-select": "^1.1.0",
+    "owl.carousel": "^2.3.4",
     "vazirmatn": "^33.0.3"
   }
 }
