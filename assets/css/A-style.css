@@ -1,0 +1,34 @@
+/*card items style*/
+.product-info{
+    display: inline-block;
+    font-size: 12px;
+    margin-top: 90px;
+}
+.product-info span{
+    display: inline-block;
+    color: green;
+}
+.product-title{
+    display: inline-block;
+    margin: 20px 0 0 ;
+    opacity: 80%;
+}
+.product-rate{
+    display: inline-block;
+    color: gold;
+    margin: 10px 20px 0 ;
+}
+.tags{
+    margin: 20px 0 0 0 ;
+    list-style: none;
+    font-size: 12px;
+}
+.tags li{
+    display: inline-block;
+    margin: 0 10px 20px 0 ;
+    text-decoration: underline;
+}
+.product-colors span{
+    font-size: 14px;
+}
+/*card items style end*/
