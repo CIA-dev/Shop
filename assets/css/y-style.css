@@ -1,6 +1,7 @@
 body img {
     border-radius: 30px;
 }
+
 #head-offers img {
     width: 360px;
     height: 220px;
@@ -13,23 +14,77 @@ body img {
     transform: scale(102%);
 }
 
-.box-main  del {
+.box-main del {
     display: block;
     text-align: center;
     color: #666666;
     font-size: 12px;
 
 }
-.box-main  span {
+
+.box-main span {
     display: block;
     text-align: center;
     color: dodgerblue;
+
 }
+
 .box-main {
     background-color: white;
     border-radius: 30px;
+
 }
+
 .box-main h4 {
     font-size: 14px;
     text-align: center;
+
 }
+
+#offer-big img {
+    transition: 666ms;
+    opacity: 85%;
+
+}
+
+#offer-big img:hover {
+    opacity: 100%;
+    transform: scale(103%);
+}
+
+#body-part1{
+    transition: 666ms;
+    opacity: 85%;
+}
+
+#body-part1 .box-main:hover {
+        transform:scale(101%) ;
+    opacity: 90%;
+    color: black;
+
+
+}
+#body-part1 .box-main:hover img {
+
+}
+#body-part2{
+    transition: 666ms;
+    opacity: 85%;
+}
+
+#body-part2 .box-main:hover {
+        transform:scale(101%) ;
+    opacity: 90%;
+    color: black;
+
+
+}
+#body-part2 .box-main:hover img {
+
+}
+.item a {
+    text-decoration: none;
+}
+
+
+
