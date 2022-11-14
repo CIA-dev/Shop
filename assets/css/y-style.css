@@ -59,7 +59,7 @@ body img {
 
 #body-part1 .box-main:hover {
         transform:scale(101%) ;
-    opacity: 90%;
+    opacity: 100%;
     color: black;
 
 
@@ -74,14 +74,20 @@ body img {
 
 #body-part2 .box-main:hover {
         transform:scale(101%) ;
-    opacity: 90%;
+    opacity: 100%;
     color: black;
-
-
 }
-#body-part2 .box-main:hover img {
-
+#body-part3{
+    transition: 666ms;
+    opacity: 85%;
 }
+
+#body-part3 .box-main:hover {
+        transform:scale(101%) ;
+    opacity: 100%;
+    color: black;
+}
+
 .item a {
     text-decoration: none;
 }
