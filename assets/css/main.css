@@ -157,7 +157,19 @@ body {
   display: block;
 }
 
+.overlay {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9998;
+}
+
 #nav-section {
+  position: relative;
+  z-index: 9999;
   background-color: #fff;
 }
 #nav-section .form-search input {
@@ -575,7 +587,5 @@ body {
     margin: 15px auto;
   }
 }
-body {
-  background-color: #f5f5f5 ;
-}
+
 /*# sourceMappingURL=main.css.map */

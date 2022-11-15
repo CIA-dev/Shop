@@ -1,5 +1,6 @@
 $(function () {
     $('select').niceSelect();
+    $('.overlay').hide();
 //    navigation dropdown active
 
     $('.account-title').on('mouseenter', function (e) {
@@ -13,11 +14,12 @@ $(function () {
     $('.has-mega').on('mouseenter', function (e) {
         $(this).find('>.dropdown-menu').stop().slideDown();
         $(this).find('span.fa').addClass('fa-rotate-180');
-
+        $('.overlay').stop().fadeIn();
     })
     $('.has-mega').on('mouseleave', function (e) {
         $(this).find('>.dropdown-menu').stop().slideUp();
         $(this).find('span.fa').removeClass('fa-rotate-180');
+        $('.overlay').stop().fadeOut();
 
     })
     $('.shop-card').on('mouseenter', function (e) {
@@ -33,10 +35,13 @@ $(function () {
     $('.has-dropdown').on('mouseenter', function (e) {
         $(this).find('>.dropdown-menu').stop().slideDown();
         $(this).find('span.fa-chevron-down').addClass('fa-rotate-180');
+        $('.overlay').stop().fadeIn();
+
     })
     $('.has-dropdown').on('mouseleave', function (e) {
         $(this).find('>.dropdown-menu').stop().slideUp();
         $(this).find('span.fa').removeClass('fa-rotate-180');
+        $('.overlay').stop().fadeOut();
 
     })
 

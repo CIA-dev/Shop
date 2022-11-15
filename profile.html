@@ -2,22 +2,589 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.rtl.min.css">
-  <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
 
-  <script src="node_modules/jquery/dist/jquery.min.js"></script>
-  <script src="node_modules/jquery-nice-select/js/jquery.nice-select.js"></script>
-  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="node_modules/hc-offcanvas-nav/dist/hc-offcanvas-nav.js"></script>
-  <script src="assets/js/main.js"></script>
-  <script src="assets/js/profile.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/jquery-nice-select/js/jquery.nice-select.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="node_modules/hc-offcanvas-nav/dist/hc-offcanvas-nav.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/profile.js"></script>
 
 </head>
 <body>
-<section  id="profile">
+<div class="overlay">
+
+</div>
+
+<section id="profile">
+    <section id="nav-section">
+        <div class="container-fluid">
+            <div class="row p-4">
+                <div class="col-md-4 p-0 col-6 mt-md-0 mt-3">
+                    <h1 class="h2">
+                        CIA<span class="text-warning">-Dev</span>
+                    </h1>
+                </div>
+                <div class="col-md-4 p-0 col-12 order-md-0 order-last m-0">
+                    <div class="header-search-box">
+                        <form action="#" class="form-search input-group">
+                            <input type="search" name="search-input"
+                                   placeholder="نام کالا، برند و یا دسته مورد نظر خود را جستجو کنید…">
+                            <div class="action-btns">
+                                <div class="search-filter">
+                                    <div class="form-ui">
+                                        <div class="custom-select-ui">
+                                            <select class="right">
+                                                <option>همه دسته ها</option>
+                                                <option>کالای دیجیتال</option>
+                                                <option>آرایشی بهداشتی</option>
+                                                <option>ابزاری اداری</option>
+                                                <option>مد پوشاک</option>
+                                                <option>خانه آشپز خانه</option>
+                                                <option>لوازم تحریر و هنر</option>
+                                                <option>کودک و نوزاد</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn btn-search" type="submit">
+                                <span class="fa fa-search"></span>
+                            </button>
+                        </form>
+                    </div>
+                    <div class="col-md-4 p-0 m-0">
+
+                    </div>
+                </div>
+                <div class="col-md-4 col-6 col-6 p-0 m-0 text-end">
+                    <div class="nav-account">
+                        <div class="account-box">
+                        <span class="account-title mx-3">
+                            حساب کاربری
+                            <ul class="dropdown-menu">
+                                <li>
+                                        <a href="#">پنل کاربری</a>
+                                    </li>
+                                <li>
+                                        <a href="#">سفارشات من</a>
+                                    </li>
+                                <li>
+                                        <a href="#">تنظیمات</a>
+                                    </li>
+                                <li>
+                                        <form action="#"></form>
+                                        <a href="#">خروج</a>
+                                    </li>
+                            </ul>
+                        </span>
+                            <span class="account-icon">
+                            <img class="img-fluid" src="assets/img/profile.png" alt="account-icon">
+                        </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav id="desktop">
+                <div class="row">
+                    <div class="col-md-8 d-flex align-items-center">
+                        <ul>
+                            <li class="has-mega under-hover">
+                                <a href="#">
+                                    کالای دیجیتال
+                                    <span class="fa fa-chevron-down ms-1"></span>
+                                    <div class="dropdown-menu mt-4">
+                                        <div class="row">
+                                            <div class="col-md p-0">
+                                                <ul>
+                                                    <h2 class="h4">
+                                                        موبایل
+                                                    </h2>
+                                                    <li><a href="#">پل</a></li>
+                                                    <li><a href="#">سامسونگ</a></li>
+                                                    <li><a href="#">نوکیا</a></li>
+                                                    <li><a href="#">ایسوس</a></li>
+                                                    <li><a href="#">هوآیی</a></li>
+                                                    <li><a href="#">ال جی</a></li>
+                                                    <li><a href="#">اچ تی سی</a></li>
+                                                    <li><a href="#">سونی</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md p-0">
+                                                <ul>
+                                                    <h2 class="h4">
+                                                        تبلت و کتاب خوان
+                                                    </h2>
+                                                    <li><a href="#">پل</a></li>
+                                                    <li><a href="#">سامسونگ</a></li>
+                                                    <li><a href="#">نوکیا</a></li>
+                                                    <li><a href="#">ایسوس</a></li>
+                                                    <li><a href="#">هوآیی</a></li>
+                                                    <li><a href="#">ال جی</a></li>
+                                                    <li><a href="#">اچ تی سی</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md p-0">
+                                                <ul>
+                                                    <h2 class="h4">
+                                                        کامپیوتر و تجهیزات جانبی
+                                                    </h2>
+                                                    <li><a href="#">هار دیسک</a></li>
+                                                    <li><a href="#">ماوس</a></li>
+                                                    <li><a href="#">کی بورد</a></li>
+                                                    <li><a href="#">نمایشگر</a></li>
+                                                    <li><a href="#">پردازنده</a></li>
+                                                    <li><a href="#">مادر برد</a></li>
+                                                    <li><a href="#">کارت گرافیک</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md p-0">
+                                                <ul>
+                                                    <h2 class="h4">
+                                                        دوربین
+                                                    </h2>
+                                                    <li><a href="#">دوربین عکاسی</a></li>
+                                                    <li><a href="#">دوربین فیلم برداری</a></li>
+                                                    <li><a href="#">تلسکوپ</a></li>
+                                                    <li><a href="#">میکروسکوپ و ذره بین</a></li>
+                                                    <li><a href="#">لوازم جانبی عکاسی و فیلم برداری</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md mega-img align-self-end pb-0 mb-0">
+                                                <img class="img-fluid" src="assets/img/digital.png" alt="digital">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="has-mega under-hover">
+                                <a href="#">
+                                    آرایشی بهداشتی
+                                    <span class="fa fa-chevron-down ms-1"></span>
+                                    <div class="dropdown-menu mt-4">
+                                        <div class="row">
+                                            <div class="col p-0">
+                                                <ul>
+                                                    <h2 class="h4">لوازم آرایشی</h2>
+                                                    <li><a href="#">آرایش چشم و ابر</a></li>
+                                                    <li><a href="#">آرایش لب</a></li>
+                                                    <li><a href="#">آرایش صورت</a></li>
+                                                    <li><a href="#">تجهیزات جانبی آرایشی</a></li>
+                                                    <li><a href="#">سنگ پا و زیبایی ناخن</a></li>
+                                                    <li><a href="#">مواد آرایش مو</a></li>
+                                                    <li><a href="#">کرم مراقبت پوست</a></li>
+                                                    <li><a href="#">شامپو و مراقبت مو</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col p-0">
+                                                <ul>
+                                                    <h2 class="h4">
+                                                        لوازم شخصی برقی
+                                                    </h2>
+                                                    <li><a href="#">ماشین اصلاح صورت</a></li>
+                                                    <li><a href="#">ماشین اصلاح سر</a></li>
+                                                    <li><a href="#">سشوار</a></li>
+                                                    <li><a href="#">اصلاح بدن آقایان</a></li>
+                                                    <li><a href="#">اصلاح موی گوش و بینی</a></li>
+                                                    <li><a href="#">برس پاک سازی</a></li>
+                                                    <li><a href="#">اتو مو</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col p-0">
+                                                <ul>
+                                                    <h2 class="h4">
+                                                        لوازم بهداشتی
+                                                    </h2>
+                                                    <li><a href="#">کرم و مراقبت پوست</a></li>
+                                                    <li><a href="#">شامپو و مراقبت مو</a></li>
+                                                    <li><a href="#">بهداشت دهان و دندان</a></li>
+                                                    <li><a href="#">بهداشت و مراقبت بدن</a></li>
+                                                    <li><a href="#">ضد تعرق</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col p-0">
+                                                <ul>
+                                                    <h2 class="h4">
+                                                        ابزار مراقبت و طبی
+                                                    </h2>
+                                                    <li><a href="#">مچ بند و ساعت هوشمند</a></li>
+                                                    <li><a href="#">ترازو</a></li>
+                                                    <li><a href="#">کالای خواب و استراحت طبی</a></li>
+                                                    <li><a href="#">تست قند خون</a></li>
+                                                    <li><a href="#">تب سنج</a></li>
+                                                    <li><a href="#">فشار سنج</a></li>
+                                                    <li><a href="#">ابزار مراقبت پا</a></li>
+                                                    <li><a href="#">نمایشگر ضربان قلب</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col align-self-end pb-0 mb-0">
+                                                <img class="img-fluid" src="assets/img/cosmetic.png" alt="cosmetic">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class=" under-hover">
+                                <a href="#">
+                                    ابزار و اداری
+                                </a>
+                            </li>
+                            <li class=" under-hover">
+                                <a href="#">
+                                    مد و پوشاک
+                                </a>
+                            </li>
+                            <li class="has-mega under-hover">
+                                <a href="#">
+                                    خانه و اشپزخانه
+                                    <span class="fa fa-chevron-down ms-1"></span>
+                                    <div class="dropdown-menu mt-4">
+                                        <div class="row">
+                                            <div class="col p-0">
+                                                <ul>
+                                                    <h2 class="h4">موبایل</h2>
+                                                    <li><a href="#">پل</a></li>
+                                                    <li><a href="#">سامسونگ</a></li>
+                                                    <li><a href="#">نوکیا</a></li>
+                                                    <li><a href="#">ایسوس</a></li>
+                                                    <li><a href="#">هوآیی</a></li>
+                                                    <li><a href="#">ال جی</a></li>
+                                                    <li><a href="#">اچ تی سی</a></li>
+                                                    <li><a href="#">سونی</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col p-0">
+                                                <ul>
+                                                    <h2 class="h4">
+                                                        تبلت و کتاب خوان
+                                                    </h2>
+                                                    <li><a href="#">پل</a></li>
+                                                    <li><a href="#">سامسونگ</a></li>
+                                                    <li><a href="#">نوکیا</a></li>
+                                                    <li><a href="#">ایسوس</a></li>
+                                                    <li><a href="#">هوآیی</a></li>
+                                                    <li><a href="#">ال جی</a></li>
+                                                    <li><a href="#">اچ تی سی</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col p-0">
+                                                <ul>
+                                                    <h2 class="h4">
+                                                        کامپیوتر و تجهیزات جانبی
+                                                    </h2>
+                                                    <li><a href="#">هار دیسک</a></li>
+                                                    <li><a href="#">ماوس</a></li>
+                                                    <li><a href="#">کی بورد</a></li>
+                                                    <li><a href="#">نمایشگر</a></li>
+                                                    <li><a href="#">پردازنده</a></li>
+                                                    <li><a href="#">مادر برد</a></li>
+                                                    <li><a href="#">کارت گرافیک</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col p-0">
+                                                <ul>
+                                                    <h2 class="h4">
+                                                        دوربین
+                                                    </h2>
+                                                    <li><a href="#">دوربین عکاسی</a></li>
+                                                    <li><a href="#">دوربین فیلم برداری</a></li>
+                                                    <li><a href="#">تلسکوپ</a></li>
+                                                    <li><a href="#">میکروسکوپ و ذره بین</a></li>
+                                                    <li><a href="#">لوازم جانبی عکاسی و فیلم برداری</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col align-self-end pb-0 mb-0">
+                                                <img class="img-fluid" src="assets/img/digital.png" alt="digital">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="has-dropdown under-hover">
+                                <a href="#">
+                                    لوازم تحریر و هنر
+                                    <span class="fa fa-chevron-down ms-1"></span>
+                                    <div class="dropdown-menu mt-4">
+                                        <ul>
+                                            <li>
+                                                <a href="#">کتاب و مجله</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">کتاب صوتی</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">محتوای آموزشی</a>
+                                            </li>
+                                            <li class="has-dropdown has-submenu">
+                                                <a class="d-flex align-items-center justify-content-around" href="#">
+                                                    لوازم تحریر
+                                                    <span class="fa fa-chevron-left"></span>
+                                                    <ul class="dropdown-menu">
+                                                        <li>
+                                                            <a href="#">چراغ مطالعه</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">نوشت افزار</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">دفتر و کاغذ</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">میز تحریر</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">البوم عکس</a>
+                                                        </li>
+                                                    </ul>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    نرم افزار
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class=" under-hover">
+                                <a href="#">
+                                    کودک و نوزاد
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 text-end">
+                        <a class="btn btn-primary w-25 h-100 position-relative " href="#">
+                            <span class="fa fa-heart mt-3"></span>
+                            <span class="position-absolute top-0 start-0 translate-middle badge rounded-pill bg-danger">
+                                2
+                            <span class="visually-hidden">unread messages</span>
+                        </span>
+
+                            </span>
+                        </a>
+                        <a class="btn btn-primary shop-card position-relative w-50" href="#">
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                2
+                            <span class="visually-hidden">unread messages</span>
+                        </span>
+                            <span class="fa fa-shopping-bag"></span>
+                            <span>سبد خرید</span>
+                            <br>
+                            <span>25,000,000 تومان</span>
+                            <div class="details position-absolute dropdown-menu start-0 w-100 mt-2">
+                                <div class="box p-2">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <img class="img-thumbnail" style="width: 60px" src="assets/img/img-card.jpg"
+                                                 alt="">
+                                        </div>
+                                        <div class="col-9">
+                                            <p class="h5">لپ تاپ چووی الترابوک 14 اینچ</p>
+                                            <p class="seller my-2">
+                                                فروشنده :
+                                                کالامارکت
+                                            </p>
+                                            <p class="d-flex justify-content-between align-items-center">
+                                                <span>15,000,000 تومان</span>
+                                                <span>
+                                                <span class="fa fa-circle mx-1"></span>
+                                                رنگ
+                                            </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box p-2">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <img class="img-thumbnail" style="width: 60px" src="assets/img/img-card.jpg"
+                                                 alt="">
+                                        </div>
+                                        <div class="col-9">
+                                            <p class="h5">لپ تاپ چووی الترابوک 14 اینچ</p>
+                                            <p class="seller my-2">
+                                                فروشنده :
+                                                کالامارکت
+                                            </p>
+                                            <p class="d-flex justify-content-between align-items-center">
+                                                <span>15,000,000 تومان</span>
+                                                <span>
+                                                <span class="fa fa-circle mx-1"></span>
+                                                رنگ
+                                            </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="footer text-center">
+                                    <p class="bg-info p-2 my-4">
+                                        قیمت کل :
+                                        30,000,000
+                                        تومان
+                                    </p>
+                                    <div class="btn-group">
+                                        <button class="btn btn-outline-primary">مشاهده سبد خرید</button>
+                                        <button class="btn btn-primary">تسویه حساب</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+            <div class="row d-md-none d-flex">
+                <div class="col-6">
+                    <span id="nav-icon" class="fa fa-bars"></span>
+                </div>
+                <div class="col-6 text-end">
+                    <a class="btn btn-primary position-relative " href="#">
+                        <span class="fa fa-heart "></span>
+                        <span class="position-absolute top-0 start-0 translate-middle badge rounded-pill bg-danger">
+                                2
+                            <span class="visually-hidden">unread messages</span>
+                        </span>
+
+                        </span>
+                    </a>
+                    <a class="btn btn-primary position-relative " href="#">
+                        <span class="fa fa-shopping-bag "></span>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                2
+                            <span class="visually-hidden">unread messages</span>
+                        </span>
+
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <nav id="mobile">
+                <ul>
+                    <li>
+                        <a href="#">کالای دیجیتال</a>
+                        <ul>
+                            <li>
+                                <a href="#">لوازم جانبی گوشی</a>
+                                <ul>
+                                    <li><a href="#">کیف و کاور گوشی</a></li>
+                                    <li><a href="#">پاور بانک</a></li>
+                                    <li><a href="#">پایه نگهدارنده گوشی</a></li>
+                                    <li><a href="#">همه موارد این دسته</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">گوشی موبایل</a>
+                                <ul>
+                                    <li><a href="#">سامسونگ</a></li>
+                                    <li><a href="#">هوآیی</a></li>
+                                    <li><a href="#">اپل</a></li>
+                                    <li><a href="#">شیائومی</a></li>
+                                    <li><a href="#">آنر</a></li>
+                                    <li><a href="#">نوکیا</a></li>
+                                    <li><a href="#">همه موارد این دسته</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">دوربین</a>
+                                <ul>
+                                    <li><a href="#">دوربین عکاسی دیجیتال</a></li>
+                                    <li><a href="#">دوربین ورزشی و فیلم برداری</a></li>
+                                    <li><a href="#">دوربین چاپ سریع</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">آرایشی بهداشتی</a>
+                        <ul>
+                            <li>
+                                <a href="#">لوازم جانبی گوشی</a>
+                                <ul>
+                                    <li><a href="#">کیف و کاور گوشی</a></li>
+                                    <li><a href="#">پاور بانک</a></li>
+                                    <li><a href="#">پایه نگهدارنده گوشی</a></li>
+                                    <li><a href="#">همه موارد این دسته</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">گوشی موبایل</a>
+                                <ul>
+                                    <li><a href="#">سامسونگ</a></li>
+                                    <li><a href="#">هوآیی</a></li>
+                                    <li><a href="#">اپل</a></li>
+                                    <li><a href="#">شیائومی</a></li>
+                                    <li><a href="#">آنر</a></li>
+                                    <li><a href="#">نوکیا</a></li>
+                                    <li><a href="#">همه موارد این دسته</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">دوربین</a>
+                                <ul>
+                                    <li><a href="#">دوربین عکاسی دیجیتال</a></li>
+                                    <li><a href="#">دوربین ورزشی و فیلم برداری</a></li>
+                                    <li><a href="#">دوربین چاپ سریع</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">ابزار اداری</a>
+                    </li>
+                    <li>
+                        <a href="#">مد و پوشاک</a>
+                    </li>
+                    <li>
+                        <a href="#">خانه و آشپزخانه</a>
+                        <ul>
+                            <li>
+                                <a href="#">لوازم جانبی گوشی</a>
+                                <ul>
+                                    <li><a href="#">کیف و کاور گوشی</a></li>
+                                    <li><a href="#">پاور بانک</a></li>
+                                    <li><a href="#">پایه نگهدارنده گوشی</a></li>
+                                    <li><a href="#">همه موارد این دسته</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">گوشی موبایل</a>
+                                <ul>
+                                    <li><a href="#">سامسونگ</a></li>
+                                    <li><a href="#">هوآیی</a></li>
+                                    <li><a href="#">اپل</a></li>
+                                    <li><a href="#">شیائومی</a></li>
+                                    <li><a href="#">آنر</a></li>
+                                    <li><a href="#">نوکیا</a></li>
+                                    <li><a href="#">همه موارد این دسته</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">دوربین</a>
+                                <ul>
+                                    <li><a href="#">دوربین عکاسی دیجیتال</a></li>
+                                    <li><a href="#">دوربین ورزشی و فیلم برداری</a></li>
+                                    <li><a href="#">دوربین چاپ سریع</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">لوازم تحریر و هنر</a>
+                    </li>
+                    <li>
+                        <a href="#">کودک و نوزاد</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
 
 </section>
 
