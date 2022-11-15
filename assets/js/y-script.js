@@ -12,7 +12,7 @@ $(function () {
                 items:3
             },
             1000:{
-                items:5
+                items:4
             }
         }
     });
@@ -31,7 +31,7 @@ $(function () {
                 items:3
             },
             1000:{
-                items:5
+                items:4
             }
         }
     });
@@ -50,7 +50,7 @@ $(function () {
                 items:3
             },
             1000:{
-                items:5
+                items:4
             }
         }
     });

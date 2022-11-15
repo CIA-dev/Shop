@@ -6,6 +6,7 @@
 @import "../../node_modules/owl.carousel/dist/assets/owl.theme.default.css";
 body {
   direction: rtl;
+  background-color: #f5f5f5;
 }
 
 * {
@@ -418,6 +419,7 @@ body {
 #hots .offers {
   border: 1px solid #ddd;
   border-radius: 8px;
+  background-color: #fff;
 }
 #hots .offers .owl-theme .owl-dots {
   text-align: center;
@@ -522,6 +524,7 @@ body {
   font-size: 0.8rem;
 }
 #hots .ontime {
+  background-color: #fff;
   border: 1px solid #ddd;
   width: 320px;
   margin: 0 auto;

@@ -2,6 +2,7 @@
   .offers {
     border: 1px solid #ddd;
     border-radius: 8px;
+    background-color: #fff;
 
     .owl-theme {
 
@@ -137,6 +138,8 @@
   }
 
   .ontime {
+    background-color: #fff;
+
     border: 1px solid #ddd;
     width: 320px;
     margin: 0 auto;
@@ -233,7 +236,7 @@
       border: 1px solid #f5f5f5;
       border-radius: 8px;
       display: grid;
-      grid-template-columns: repeat(3 , 1fr);
+      grid-template-columns: repeat(3, 1fr);
       align-items: center;
       justify-content: space-between;
       padding: 5px;
@@ -351,13 +354,15 @@
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
+
     .container {
       .box {
         margin: 0 auto;
         display: grid;
-        grid-template-columns: repeat(2 , 1fr);
+        grid-template-columns: repeat(2, 1fr);
         grid-template-areas: 'A A' '. .';
         height: 320px;
+
         .box-img {
           margin: 0 auto;
           grid-area: A;
