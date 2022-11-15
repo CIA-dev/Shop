@@ -563,6 +563,109 @@ body {
   color: #651fff;
 }
 
+#last-part {
+  background-image: url("../img/y-pic/background.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+  position: relative;
+}
+#last-part:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+#last-part .container {
+  position: relative;
+  z-index: 2;
+}
+#last-part .container h2 {
+  color: #fff;
+  text-align: center;
+  display: block;
+  font-size: 1.5rem;
+  margin: 25px 0;
+}
+#last-part .container h2 span {
+  display: block;
+  font-size: 1.2rem;
+  margin: 20px 0;
+}
+#last-part .container .box {
+  background-color: #fff;
+  border: 1px solid #f5f5f5;
+  border-radius: 8px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  text-align: center;
+}
+#last-part .container .box .box-img {
+  width: 120px;
+  height: 90px;
+  overflow: hidden;
+}
+#last-part .container .box .box-img img {
+  width: 100%;
+  height: 90px;
+  object-fit: cover;
+}
+#last-part .container .box .box-title a {
+  text-decoration: none;
+  color: #616161;
+  display: block;
+}
+#last-part .container .box .box-title a:hover {
+  color: #651fff;
+}
+#last-part .container .box .box-title span {
+  display: block;
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+#last-part .container .box .rating .rate-area {
+  float: left;
+  border-style: none;
+}
+#last-part .container .box .rating .rate-area:not(:checked) > input {
+  position: absolute;
+  top: -9999px;
+  clip: rect(0, 0, 0, 0);
+}
+#last-part .container .box .rating .rate-area:not(:checked) > label {
+  float: right;
+  width: 0.8em;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 180%;
+  color: lightgrey;
+}
+#last-part .container .box .rating .rate-area:not(:checked) > label:before {
+  content: "★";
+}
+#last-part .container .box .rating .rate-area > input:checked ~ label {
+  color: gold;
+}
+#last-part .container .box .rating .rate-area:not(:checked) > label:hover,
+#last-part .container .box .rating .rate-area:not(:checked) > label:hover ~ label {
+  color: gold;
+}
+#last-part .container .box .rating .rate-area > input:checked + label:hover,
+#last-part .container .box .rating .rate-area > input:checked + label:hover ~ label,
+#last-part .container .box .rating .rate-area > input:checked ~ label:hover,
+#last-part .container .box .rating .rate-area > input:checked ~ label:hover ~ label,
+#last-part .container .box .rating .rate-area > label:hover ~ input:checked ~ label {
+  color: gold;
+}
+
 @media (max-width: 1000px) {
   #hots .offers {
     width: 350px;
@@ -585,6 +688,78 @@ body {
     width: 330px;
     padding: 8px;
     margin: 15px auto;
+  }
+  #last-part {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  #last-part .container .box {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "A A" ". .";
+    height: 320px;
+  }
+  #last-part .container .box .box-img {
+    margin: 0 auto;
+    grid-area: A;
+    width: 180px;
+    height: 130px;
+    overflow: hidden;
+  }
+  #last-part .container .box .box-img img {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+  }
+  #last-part .container .box .box-title a {
+    text-decoration: none;
+    color: #616161;
+    display: block;
+  }
+  #last-part .container .box .box-title a:hover {
+    color: #651fff;
+  }
+  #last-part .container .box .box-title span {
+    display: block;
+    font-size: 0.9rem;
+    margin-top: 5px;
+  }
+  #last-part .container .box .rating .rate-area {
+    float: left;
+    border-style: none;
+  }
+  #last-part .container .box .rating .rate-area:not(:checked) > input {
+    position: absolute;
+    top: -9999px;
+    clip: rect(0, 0, 0, 0);
+  }
+  #last-part .container .box .rating .rate-area:not(:checked) > label {
+    float: right;
+    width: 0.8em;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 180%;
+    color: lightgrey;
+  }
+  #last-part .container .box .rating .rate-area:not(:checked) > label:before {
+    content: "★";
+  }
+  #last-part .container .box .rating .rate-area > input:checked ~ label {
+    color: gold;
+  }
+  #last-part .container .box .rating .rate-area:not(:checked) > label:hover,
+#last-part .container .box .rating .rate-area:not(:checked) > label:hover ~ label {
+    color: gold;
+  }
+  #last-part .container .box .rating .rate-area > input:checked + label:hover,
+#last-part .container .box .rating .rate-area > input:checked + label:hover ~ label,
+#last-part .container .box .rating .rate-area > input:checked ~ label:hover,
+#last-part .container .box .rating .rate-area > input:checked ~ label:hover ~ label,
+#last-part .container .box .rating .rate-area > label:hover ~ input:checked ~ label {
+    color: gold;
   }
 }
 footer {
