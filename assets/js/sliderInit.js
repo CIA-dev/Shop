@@ -35,6 +35,31 @@ $(function () {
     })
 
 
+    $('#e-namad .owl-carousel').owlCarousel({
+        rtl: true,
+        loop: true,
+        margin: 10,
+        nav: false,
+        autoplayTimeout: 4000,
+        responsive: {
+            0: {
+                items: 1,
+                dots: false,
+            },
+            600: {
+                items: 1,
+                dots: true,
+            },
+            1000: {
+                items: 1,
+                dots: true,
+
+            }
+        },
+
+    })
+
+
     function startProgressBar() {
         $(".slide-progress").css({
             width: "100%",
