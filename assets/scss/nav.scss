@@ -90,6 +90,7 @@
         position: relative;
 
         .dropdown-menu {
+
           top: 100%;
           right: -20%;
           text-align: center;
@@ -281,7 +282,7 @@
 
 @media (max-width: 1000px) {
   #nav-section {
-
+    z-index: 8;
     .form-search {
       margin: 10px 0;
 
@@ -334,7 +335,8 @@
     }
 
     nav#mobile {
-
+      position: relative;
+      z-index: 9999;
       #nav-icon {
         display: block;
       }
