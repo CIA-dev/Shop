@@ -1,6 +1,6 @@
 <div dir="rtl">
 
-#قالب فروشگاهی 
+##قالب فروشگاهی  
 
 <div align="center">
 
